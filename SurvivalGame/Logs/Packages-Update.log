@@ -16,3 +16,11 @@ The following packages were updated:
   com.unity.visualeffectgraph from version 17.0.2 to 17.0.3
   com.unity.splines from version 2.5.2 to 2.6.1
   com.unity.test-framework from version 1.4.3 to 1.4.4
+
+=== Tue Jun 18 13:58:02 2024
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.postprocessing@3.4.0
