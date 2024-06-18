@@ -4,9 +4,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager: MonoBehaviour
 {
      public GameObject settingsPanel;
-     public GameObject playButton;
-     public GameObject settingsButton;
-     public GameObject quitButton;
+     public GameObject mainMenuPanel;
      
      public GameObject soundsPanel;
      public GameObject gameplayPanel;
@@ -14,9 +12,7 @@ public class MainMenuManager: MonoBehaviour
 
      public void DefaultMainMenu()
      {
-          playButton.SetActive(true);
-          settingsButton.SetActive(true);
-          quitButton.SetActive(true);
+          mainMenuPanel.SetActive(true);
           settingsPanel.SetActive(false);
           soundsPanel.SetActive(false);
           gameplayPanel.SetActive(false);
@@ -30,9 +26,7 @@ public class MainMenuManager: MonoBehaviour
 
     public void Settings()
     {
-          playButton.SetActive(false);
-          settingsButton.SetActive(false);
-          quitButton.SetActive(false);
+            mainMenuPanel.SetActive(false);
           settingsPanel.SetActive(true);
     }
 
