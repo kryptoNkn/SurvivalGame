@@ -6,6 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d04af905-1877-4934-8253-48a523304822" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SurvivalGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SurvivalGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/Erika_Archer_Clothes_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/Erika_Archer_Clothes_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/Erika_Archer_Clothes_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/Erika_Archer_Clothes_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/FemaleFitA_Body_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/FemaleFitA_Body_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/FemaleFitA_StdNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/FemaleFitA_StdNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/FemaleFitA_eyelash_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/PlayerModel/FemaleFitA_eyelash_diffuse.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +107,7 @@
       <workItem from="1718711860938" duration="21000" />
       <workItem from="1718719685296" duration="25000" />
       <workItem from="1718719722405" duration="1565000" />
-      <workItem from="1718725413901" duration="13794000" />
+      <workItem from="1718725413901" duration="16331000" />
     </task>
     <servers />
   </component>
