@@ -1,0 +1,18 @@
+
+=== Tue Jun 18 13:35:25 2024
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.modules.accessibility@1.0.0
+The following packages were updated:
+  com.unity.cinemachine from version 2.9.5 to 2.10.0
+  com.unity.ide.rider from version 3.0.27 to 3.0.28
+  com.unity.inputsystem from version 1.8.1 to 1.8.2
+  com.unity.recorder from version 5.1.0-pre.1 to 5.1.0
+  com.unity.render-pipelines.universal from version 17.0.2 to 17.0.3
+  com.unity.render-pipelines.universal-config from version 17.0.1 to 17.0.3
+  com.unity.visualeffectgraph from version 17.0.2 to 17.0.3
+  com.unity.splines from version 2.5.2 to 2.6.1
+  com.unity.test-framework from version 1.4.3 to 1.4.4
