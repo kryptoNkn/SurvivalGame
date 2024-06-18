@@ -7,6 +7,10 @@ public class MainMenuManager: MonoBehaviour
      public GameObject playButton;
      public GameObject settingsButton;
      public GameObject quitButton;
+     
+     public GameObject soundsPanel;
+     public GameObject gameplayPanel;
+     public GameObject developerPanel;
 
      public void DefaultMainMenu()
      {
@@ -14,6 +18,9 @@ public class MainMenuManager: MonoBehaviour
           settingsButton.SetActive(true);
           quitButton.SetActive(true);
           settingsPanel.SetActive(false);
+          soundsPanel.SetActive(false);
+          gameplayPanel.SetActive(false);
+          developerPanel.SetActive(false);
      }
 
     public void Play()
