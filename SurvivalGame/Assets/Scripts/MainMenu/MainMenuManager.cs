@@ -9,12 +9,15 @@ public class MainMenuManager: MonoBehaviour
      public GameObject soundsPanel;
      public GameObject developerPanel;
 
+     public GameObject copyrightTxt;
+
      public void DefaultMainMenu()
      {
           mainMenuPanel.SetActive(true);
           settingsPanel.SetActive(false);
           soundsPanel.SetActive(false);
           developerPanel.SetActive(false);
+          copyrightTxt.SetActive(true);
      }
 
     public void Play()
@@ -26,6 +29,7 @@ public class MainMenuManager: MonoBehaviour
     {
         mainMenuPanel.SetActive(false);
         settingsPanel.SetActive(true);
+        copyrightTxt.SetActive(false);
     }
 
     public void Quit()
