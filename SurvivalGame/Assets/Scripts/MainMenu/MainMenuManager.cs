@@ -7,7 +7,6 @@ public class MainMenuManager: MonoBehaviour
      public GameObject mainMenuPanel;
      
      public GameObject soundsPanel;
-     public GameObject gameplayPanel;
      public GameObject developerPanel;
 
      public void DefaultMainMenu()
@@ -15,7 +14,6 @@ public class MainMenuManager: MonoBehaviour
           mainMenuPanel.SetActive(true);
           settingsPanel.SetActive(false);
           soundsPanel.SetActive(false);
-          gameplayPanel.SetActive(false);
           developerPanel.SetActive(false);
      }
 
@@ -26,8 +24,8 @@ public class MainMenuManager: MonoBehaviour
 
     public void Settings()
     {
-            mainMenuPanel.SetActive(false);
-          settingsPanel.SetActive(true);
+        mainMenuPanel.SetActive(false);
+        settingsPanel.SetActive(true);
     }
 
     public void Quit()
