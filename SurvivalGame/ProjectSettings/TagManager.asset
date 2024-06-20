@@ -2,40 +2,37 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 3
+  serializedVersion: 2
   tags:
-  - MainLight
-  - CinemachineTarget
-  - ScreenCamera
-  - cockpit_capitalLaser
+  - Flesh
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Temp_Post
+  - 
   - Water
   - UI
-  - Terminal
-  - Location
-  - LookInteractor
-  - Screen
-  - Occluder
-  - Camera
-  - MainCameraOnly
-  - Oasis_TerrainBake
-  - Ground
+  - 
+  - 
+  - Zombie
+  - Interact
+  - BodyPart
+  - PlayerBody
+  - PlayerInvisible
+  - PostProcessing Main
+  - PostProcessing Arms
+  - CamExamination
+  - CamWeapon
   - 
   - 
   - 
   - 
   - 
-  - Cockpit
-  - Cockpit_3DSkybox
-  - Cockpit_3DSkybox_BG
-  - Cockpit_Ally
-  - Cockpit_Invader
-  - Cockpit_BG
-  - Cockpit_DepthClear
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -45,7 +42,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  m_RenderingLayers:
-  - Default
-  - Screen
-  - Lamps
