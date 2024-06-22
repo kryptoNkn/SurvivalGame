@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-  public GameObject inventory;
-  public bool flag = false;
+    public GameObject inventory;
+    public bool flag = false;
 
-  private void Update()
-  {
-    if (Input.GetKeyDown(KeyCode.Tab))
+    private void Update()
     {
-      flag = !flag;
-      inventory.SetActive(flag);
+        
     }
-  }
 }
