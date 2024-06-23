@@ -20,6 +20,8 @@ public class EnemyController : MonoBehaviour
 
    private void Enemy()
    {
+      Vector3 lookDirection = new Vector3(target.position.x, transform.position.y, target.position.z) - transform.position;
+      transform.rotation = Quaternion.LookRotation(lookDirection);
       distance = Vector3.Distance(transform.position, target.transform.position);
       if (distance > 10)
       {
