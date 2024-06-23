@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
@@ -7,8 +8,18 @@ public class EnemyController : MonoBehaviour
    private NavMeshAgent myAgent;
    private Animator myAnim;
 
+   private Rigidbody[] rigidbodies;
+   public int enemyHealth = 100;
+   
+      
    private void Start()
    {
+      rigidbodies = GetComponentsInChildren<Rigidbody>();
+      foreach (Rigidbody rigidbody in rigidbodies)
+      {
+         rigidbody.isKinematic = true;
+         rigidbody.tag = "Enemy";
+      }
       myAnim = GetComponent<Animator>();
       myAgent = GetComponent<NavMeshAgent>();
    }
@@ -46,4 +57,17 @@ public class EnemyController : MonoBehaviour
          myAnim.SetBool("ZombieAttack", true);
       }
    }
+
+   public void EnemyDeath()
+   {
+      myAnim.enabled = false;
+      myAgent.enabled = false;
+      foreach (Rigidbody rigidbody in rigidbodies)
+      {
+         rigidbody.isKinematic = false;   
+      }
+
+      this.enabled = false;
+   }
+   
 }
