@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 7cc367a216b121446a8dcf6c0e260c82
+  productGUID: 5a12bab581fd4db4d83da1b1fb96e2fb
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -1006,7 +1006,7 @@ PlayerSettings:
   cloudProjectId: a13cfde7-ca23-4350-a00c-69af128d2f4c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: SurvivalGame 2024-06-18_13-35-06
+  projectName: 
   organizationId: faylad
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

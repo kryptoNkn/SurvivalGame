@@ -1,5 +1,4 @@
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 
 public class Interaction : MonoBehaviour
@@ -9,7 +8,7 @@ public class Interaction : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 2))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 1.5f))
         {
             if (hit.collider.tag == "Item")
             {

@@ -11,12 +11,24 @@ public class PlayerManager : MonoBehaviour
     public TextMeshProUGUI playerHealthTxt;
     public GameObject bloodOverlay;
     private Button button;
-    
+
+    public static int aidKitValue = 50;
+    public static int bandageValue = 20;
+
+    public int itemId;
     
     private void Start()
     {
         button = GetComponent<Button>();
-        button.onClick.AddListener(ItemInteraction);
+        if (itemId == 1)
+        {
+        button.onClick.AddListener(FirstAidKitInteraction);
+        }
+
+        if (itemId == 2)
+        {
+            button.onClick.AddListener(BandageInteraction);
+        }
     }
 
     private void Update()
@@ -24,6 +36,7 @@ public class PlayerManager : MonoBehaviour
         playerHealthTxt.text = "" + playerHealth.ToString();
         if (gameOver) {SceneManager.LoadScene(0);}
         if (playerHealth <= 20) {playerHealthTxt.color = Color.red;}
+        if (playerHealth > 20) {playerHealthTxt.color = Color.white;}
     }
 
     public IEnumerator Damage(int damageCount)
@@ -36,9 +49,17 @@ public class PlayerManager : MonoBehaviour
         bloodOverlay.SetActive(false);
     }
 
-    private void ItemInteraction()
+    private void FirstAidKitInteraction()
     {
-        playerHealth = Mathf.Min(playerHealth + 50, 100);
+        itemId = 1;
+        playerHealth = Mathf.Min(playerHealth + aidKitValue, 100);
+        Destroy(gameObject);
+    }
+
+    private void BandageInteraction()
+    {
+        itemId = 2;
+        playerHealth = Mathf.Min(playerHealth + bandageValue, 100);
         Destroy(gameObject);
     }
 }
