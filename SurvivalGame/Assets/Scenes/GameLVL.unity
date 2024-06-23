@@ -6082,7 +6082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myClip: {fileID: 8300000, guid: 607c36d4f8f40df40bd3b39335765d29, type: 3}
-  quantityPatron: 10
+  quantityPatron: 1
   patronCounter: {fileID: 75071762}
   gun: {fileID: 828087975}
 --- !u!4 &7358631408464819714

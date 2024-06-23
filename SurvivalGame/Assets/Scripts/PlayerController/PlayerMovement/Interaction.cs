@@ -17,7 +17,7 @@ public class Interaction : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 1.5f))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2))
         {
             if (hit.collider.tag == "Item")
             {
