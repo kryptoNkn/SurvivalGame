@@ -1,12 +1,20 @@
 using TMPro;
 using UnityEngine;
 
+public enum ItemType
+{
+    note
+}
+
 public class Item : MonoBehaviour
 {
     public TMP_Text message;
     public GameObject itemInventory;
     public Transform grid;
-
+    public GameObject note;
+    public ItemType itemType;
+    public PlayerInteractionUI playerInteractionUI = null;
+    
     public void ItemInteraction()
     {
             if (grid.childCount < 4)
@@ -20,6 +28,12 @@ public class Item : MonoBehaviour
             else
             {
                 message.enabled = true;
+            }
+
+            if (itemType == ItemType.note)
+            {
+                note.SetActive(true);
+                playerInteractionUI.InteractionUITrue(); 
             }
     }
 }
