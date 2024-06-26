@@ -1,5 +1,8 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
+
 public class EnemyController : MonoBehaviour
 {
    public Transform target;
@@ -9,6 +12,8 @@ public class EnemyController : MonoBehaviour
 
    private Rigidbody[] rigidbodies;
    public int enemyHealth = 100;
+
+   public GameObject winPanel;
    
       
    private void Start()
@@ -67,6 +72,8 @@ public class EnemyController : MonoBehaviour
       }
 
       this.enabled = false;
+      SceneManager.LoadScene(2);
+
    }
    
 }

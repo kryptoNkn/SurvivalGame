@@ -1,10 +1,6 @@
 using TMPro;
 using UnityEngine;
 
-public enum ItemType
-{
-    note
-}
 
 public class Item : MonoBehaviour
 {
@@ -12,7 +8,6 @@ public class Item : MonoBehaviour
     public GameObject itemInventory;
     public Transform grid;
     public GameObject note;
-    public ItemType itemType;
     public PlayerInteractionUI playerInteractionUI = null;
     
     public void ItemInteraction()
@@ -28,12 +23,6 @@ public class Item : MonoBehaviour
             else
             {
                 message.enabled = true;
-            }
-
-            if (itemType == ItemType.note)
-            {
-                note.SetActive(true);
-                playerInteractionUI.InteractionUITrue(); 
             }
     }
 }

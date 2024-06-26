@@ -32,7 +32,7 @@ public class Gun : MonoBehaviour
       {
          mySource.PlayOneShot(myClip);
          quantityPatron -= 1;
-         if (Physics.Raycast(transform.position, transform.forward, out hit, 10))
+         if (Physics.Raycast(transform.position, transform.forward, out hit, 50))
          {
             if (hit.collider.tag == "Enemy")
             {
