@@ -15,6 +15,7 @@ public class LightTrigger : MonoBehaviour
             light.SetActive(true);
             light1.SetActive(true);
             mySoundSource.GetComponent<AudioSource>().PlayOneShot(myClip);
+            Destroy(gameObject);
         }
     }
 }

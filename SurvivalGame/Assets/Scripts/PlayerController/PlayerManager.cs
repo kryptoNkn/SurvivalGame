@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
-    public static int playerHealth = 100;
+    public static int playerHealth = 20;
     public static bool gameOver = false;
     public TextMeshProUGUI playerHealthTxt;
     public GameObject bloodOverlay;
@@ -37,6 +37,7 @@ public class PlayerManager : MonoBehaviour
         if (gameOver) {SceneManager.LoadScene(0);}
         if (playerHealth <= 20) {playerHealthTxt.color = Color.red;}
         if (playerHealth > 20) {playerHealthTxt.color = Color.white;}
+        if(playerHealth < 1) {SceneManager.LoadScene(3);}
     }
 
     public IEnumerator Damage(int damageCount)
